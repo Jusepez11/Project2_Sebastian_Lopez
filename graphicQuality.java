@@ -25,7 +25,7 @@ class graphicQuality{
         gCard = sc.nextInt();
 
         //Checks that the number that is being enter mathces the number that should be entered.
-        while (gCard < 800 && gCard > 2000 ){
+        while (gCard < 800 || gCard > 2000 ){
             System.out.println("Sorry you must insert a number higher than 0.\nPLease try again.\n\nPlease enter the clock speed (in Megahertz) of your graphics card: ");
             gCard = sc.nextInt();
         }
@@ -35,7 +35,7 @@ class graphicQuality{
         processor = sc.nextInt();
 
         //Checks that the number that is being enter mathces the number that should be entered.
-        while (processor < 1000 && processor > 5500 ){
+        while (processor < 1000 || processor > 5500 ){
             System.out.println("Sorry you must insert a number higher than 0.\nPLease try again.\n\nPlease enter the clock speed (in Megahertz) of your processor: ");
             processor = sc.nextInt();
         }
@@ -45,7 +45,7 @@ class graphicQuality{
         numCore = sc.nextInt();
 
         //Checks that the number that is being enter mathces the number that should be entered.
-        while (numCore < 1 && numCore > 16 ){
+        while (numCore < 1 || numCore > 16 ){
             System.out.println("Sorry you must insert a number higher than 0.\nPLease try again.\n\nPlease enter the number of cores of your processor: ");
             numCore = sc.nextInt();
         }
@@ -55,7 +55,7 @@ class graphicQuality{
         mResolution = sc.nextInt();
 
         //Checks that the number that is being enter mathces the number that should be entered.
-        while (mResolution < 1 && mResolution > 4 ){
+        while (mResolution < 1 || mResolution > 4 ){
             System.out.println("Sorry you must insert a number higher than 0.\nPLease try again.\n\n What is the resolution of your monitor? \n\t1. 1280 x 720 \n\t2. 1920 x 1080 \n\t3. 2560 x 1440 \n\t4. 3840 x 2160\nPlease select from the options above: ");
             mResolution = sc.nextInt();
         }//End while
